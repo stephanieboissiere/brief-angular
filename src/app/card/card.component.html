@@ -1,0 +1,13 @@
+
+
+<div *ngIf = "data !== null" class="card" [ngClass]="{'flipped': flipped}" (click) = "toggleFlip()">
+    
+    <div class="face back">
+    <img src={{data.image}} alt="">
+  </div>
+
+    <div class="face front">
+<img src="assets/image/back.png" alt=""> 
+     </div>
+    
+</div>

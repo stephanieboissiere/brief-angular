@@ -1,0 +1,11 @@
+.deck { 
+    min-height: 80vh; 
+    grid-auto-rows: 25vh;
+    background: rgb(22, 39, 61);
+    grid-column-start: 1; 
+    grid-row-start: 2; 
+    grid-row-end: 5; 
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
