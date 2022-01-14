@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { DeckComponent } from './deck/deck.component';
 import { TablegameComponent } from './tablegame/tablegame.component';
 import { CardComponent } from './card/card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

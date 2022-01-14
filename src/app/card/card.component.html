@@ -1,13 +1,15 @@
+<div *ngIf="data !== null" class="card" [ngClass]="{'flippedCss': data.state=='flipped'}"
+  [ngClass]="{'matchedCss': data.state=='matched'}" (click)="cardClicked.emit()">
 
-
-<div *ngIf = "data !== null" class="card" [ngClass]="{'flipped': flipped}" (click) = "toggleFlip()">
-    
-    <div class="face back">
+  <div class="face back">
     <img src={{data.image}} alt="">
+    {{data.value}}{{data.state}}{{flipped}}
+
   </div>
 
-    <div class="face front">
-<img src="assets/image/back.png" alt=""> 
-     </div>
-    
+  <div class="face front">
+    <img src="assets/image/back.png" alt="">
+    {{data.value}}{{data.state}}{{flipped}}
+  </div>
+
 </div>

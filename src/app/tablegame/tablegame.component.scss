@@ -1,5 +1,20 @@
  .tableGame { 
-    background: rgb(136, 195, 134);
-   display: flex;
-   flex-wrap: wrap;
+   /* background: rgb(136, 195, 134);
+   display: grid;
+   grid-template-columns: repeat(4, 250px);
+   gap: 16px;
+   padding: 20px;
+justify-content: center; */
+background: rgb(136, 195, 134);
+grid-column-start: 2; 
+grid-column-end: 6; 
+grid-row-start: 2; 
+grid-row-end: 5; 
+display: grid;
+grid-template-columns: repeat(4, 250px);
+grid-auto-rows: 140px;
+grid-row-gap: 10px;
+grid-column-gap: 50px;
+align-items: center;
+justify-items: center; 
   } 

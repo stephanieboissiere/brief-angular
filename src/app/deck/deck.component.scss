@@ -1,5 +1,8 @@
 .deck { 
-    min-height: 80vh; 
+  grid-column: 1;
+  grid-row: 3;
+    min-height: 85vh; 
+    width:350px;
     grid-auto-rows: 25vh;
     background: rgb(22, 39, 61);
     grid-column-start: 1; 

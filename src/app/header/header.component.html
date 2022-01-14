@@ -1,9 +1,20 @@
 <header>
     <h1>Memory Game</h1>
-    <input type="text">
-    <button></button>
+    <div [hidden]="submitted">
+        <form (ngSubmit)="onSubmit()">
+        <input type="text" placeholder="nom du joueur" #newJoueur (keyup.enter)="addJoueur(newJoueur.value)">
+        <button type="submit"(click)="addJoueur(newJoueur.value)">
+            créer
+        </button>
+    </form>
+    </div>
+    <div [hidden]="!submitted">
+        <div *ngFor="let list of ijoueur">
+          <p>Nom du joueur : {{list.name | uppercase}}</p>
+           <p >High score : {{highScore}}</p>
+        </div>
+    </div>
     
-    <p>High score :</p>
-    <p>Score :</p>
+    <p>Score : {{score}}</p>
 </header>
 
